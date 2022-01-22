@@ -1,0 +1,270 @@
+*		{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#container	{
+	width: 600px;
+	height: 600px;
+	background: red;
+	position: relative;
+	display: flex;
+	left: 5px;
+	top: 5px;
+	animation-name: container;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes container	{
+	0%	{
+		top: 5px;
+		left: 5px;
+		background: red;
+	}
+	25%	{
+		top: 38px;
+		left: 5px;
+		background: purple;
+	}
+	50%	{
+		top: 38px;
+		left: 755px;
+		background: pink;
+	}
+	75%	{
+		top: 5px;
+		left: 755px;
+		background: deeppink;
+	}
+	100%{
+		top: 5px;
+		left: 5px;
+		background: red;
+	}
+}
+
+.containerone, .containertwo	{
+	background: orange;
+	width: 40%;
+	height: 40%;
+	top: 5px;
+	padding: 5px;
+	transition: 3s;
+	animation-iteration-count: infinite;
+	animation-duration: 8s;
+	position: absolute;
+}
+
+.containerone	{
+	animation-name: containerone;
+}
+
+@keyframes containerone{
+	0%	{
+		background: orange;
+		left: 5px;
+		top: 5px;
+		
+	}
+	25%	{
+		background: white;
+		left: 5px;
+		top: 355px;
+	}
+	50%	{
+		background: orange;
+		left: 355px;
+		top: 355px;
+	}
+	75%	{
+		background: white;
+		left: 355px;
+		top: 5px;
+	}
+	100%{
+		background: orange;
+		left: 5px;
+	}
+}
+
+.containertwo	{
+	animation-name: containertwo;
+}
+
+@keyframes containertwo	{
+	0%	{
+		background: orange;
+		left: 355px;
+		top: 355px;
+	}
+	25%	{
+		background: white;
+		left: 355px;
+		top: 5px;
+	}
+	50%	{
+		background: orange;
+		left: 5px;
+		top: 5px;
+	}
+	75%	{
+		background: white;
+		left: 5px;
+		top: 355px;
+	}
+	100%{
+		background: orange;
+		left: 355px;
+		top: 355px;
+	}
+}
+
+.containerone > div	{
+	width: 25%;
+	height: 25%;
+	border: 2px solid black;
+	margin-bottom: 5px;
+	transition: 3s;
+	animation-duration: 5s;
+}
+
+.containertwo > div	{
+	width: 25%;
+	height: 25%;
+	border: 2px solid black;
+	margin-bottom: 5px;
+	transition: 3s;
+	animation-duration: 5s;
+}
+
+.shapeoneone, .shapetwoone	{
+	background: blue;
+	animation-name: shapeone;
+	animation-iteration-count: infinite;
+}
+
+.shapeoneone	{
+	float: left;
+}
+
+.shapetwoone	{
+	float: right;
+}
+
+@keyframes shapeone	{
+	0% 	{
+		width: 25%;
+		background: blue;
+	}
+	50% {
+		width: 100%;
+		background: cyan;
+	}
+	100%{
+		width: 25%;
+		background: blue;
+	}
+}
+
+.shapeonetwo, .shapetwotwo	{
+	background: yellow;
+	margin-left: 75%;
+	animation-name: shapetwo;
+	animation-iteration-count: infinite;
+	float: right;
+}
+
+.shapeonetwo	{
+	
+}
+
+.shapetwotwo	{
+	
+}
+
+@keyframes shapetwo	{
+	0%	{
+		background: yellow;
+		height: 25%;
+	}
+	50%	{
+		background: deeppink;
+		height: 73%;
+	}
+	100%{
+		background: yellow;
+		height: 25%;
+	}
+}
+
+.shapeonethree, .shapetwothree	{
+	background: green;
+	margin-top: 27.5%;
+	animation-name: shapethree;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.shapeonethree:hover, .shapetwothree:hover	{
+	height: 72.5%;
+}
+
+@keyframes shapethree	{
+	0%	{
+		background: green;
+		width: 25%;
+		height: 25%;
+	}
+	10%	{
+		background: blue;
+		width: 34.7%;
+		height: 34.5%;
+	}
+	20%	{
+		background: yellow;
+		width: 44.4%;
+		height: 44%;
+	}
+	30%	{
+		background: purple;
+		width: 54.1%;
+		height: 53.5%;
+	}
+	40%	{
+		background: cyan;
+		width: 63.8%;
+		height: 63%;
+	}
+	50%	{
+		background: deeppink;
+		width: 73.5%;
+		height: 72.5%;
+	}
+	60%	{
+		background: white;
+		width: 63.8%;
+		height: 63%;
+	}
+	70%	{
+		background: gray;
+		width: 54.1%;
+		height: 53.5%;
+	}
+	80%	{
+		background: red;
+		width: 44.4%;
+		height: 44%;
+	}
+	90%	{
+		background: black;
+		width: 34.7%;
+		height: 34.5%;
+	}
+	100%{
+		background: green;
+		width: 25%;
+		height: 25%;
+	}
+}
